@@ -1,26 +1,93 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light theme variables */
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --text: #0f172a;
+  --muted: #64748b;
+  --brand: #2563eb;
+  --accent: #06b6d4;
+  --success: #10b981;
+  --danger: #ef4444;
+  
+  /* Legacy variables for compatibility */
+  --background: var(--bg);
+  --foreground: var(--text);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* Map CSS variables to Tailwind tokens */
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  
+  /* Brand colors */
+  --color-brand-500: #2563eb;
+  --color-brand-600: #1d4ed8;
+  
+  /* Accent colors */
+  --color-accent: #06b6d4;
+  
+  /* Font families */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark theme variables */
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --brand: #3b82f6;
+    --accent: #22d3ee;
+    --success: #34d399;
+    --danger: #f87171;
+    
+    /* Legacy variables for compatibility */
+    --background: var(--bg);
+    --foreground: var(--text);
   }
 }
 
+/* Utility helpers */
+.container-wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+@media (min-width: 768px) {
+  .container-wrapper {
+    padding-left: 2rem; /* md:px-8 */
+    padding-right: 2rem; /* md:px-8 */
+  }
+}
+
+.section-spacing {
+  margin-top: 2rem; /* space-y-8 */
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    margin-top: 3rem; /* md:space-y-12 */
+    margin-bottom: 3rem;
+  }
+}
+
+/* Base styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg);
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
 }
