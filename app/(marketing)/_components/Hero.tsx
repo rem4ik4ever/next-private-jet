@@ -1,15 +1,8 @@
 'use client'
 
 import { Button } from "@/components/ui/button"
-import { useRouter } from "next/navigation"
 
 export default function Hero() {
-  const router = useRouter()
-
-  const handleGetStarted = () => {
-    router.push("/signup")
-  }
-
   const handleLearnMore = () => {
     document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })
   }
@@ -27,10 +20,18 @@ export default function Hero() {
             Transform your ideas into reality with our comprehensive suite of tools designed for modern developers and teams.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button size="lg" className="px-8">
-              Get started
+            <Button 
+              size="lg" 
+              className="px-8"
+              aria-disabled="true"
+              aria-describedby="signup-coming-soon"
+            >
+              Sign up
             </Button>
-            <Button variant="outline" size="lg" className="px-8">
+            <span id="signup-coming-soon" className="sr-only">
+              Sign up coming soon
+            </span>
+            <Button variant="outline" size="lg" className="px-8" onClick={handleLearnMore}>
               Learn more
             </Button>
           </div>
