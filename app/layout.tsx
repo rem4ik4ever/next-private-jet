@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Discover events, reconnect with classmates, and stay close to your alma mater.",
     url: "/",
     siteName: "Alumco",
-    images: "/og.png",
+    images: "/og.svg",
     locale: "en_US",
     type: "website",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Alumco — Reunite with your alumni network",
     description: "Discover events, reconnect with classmates, and stay close to your alma mater.",
-    images: "/og.png",
+    images: "/og.svg",
   },
 };
 
@@ -41,6 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      </head>
       <body
         className={`${inter.variable} ${jetBrainsMono.variable} antialiased`}
       >

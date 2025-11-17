@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    
+    <!-- Drop shadow for text -->
+    <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Subtle geometric pattern -->
+  <circle cx="100" cy="100" r="50" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1100" cy="550" r="80" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="900" cy="150" r="30" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="200" cy="500" r="40" fill="rgba(255,255,255,0.05)"/>
+  
+  <!-- Main text -->
+  <text x="600" y="280" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="bold" text-anchor="middle" fill="white" filter="url(#textShadow)">Alumco</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="340" font-family="Arial, Helvetica, sans-serif" font-size="28" text-anchor="middle" fill="rgba(255,255,255,0.85)">Reunite with your alumni network</text>
+</svg>
