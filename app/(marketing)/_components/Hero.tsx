@@ -1,6 +1,16 @@
 import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation"
 
 export default function Hero() {
+  const router = useRouter()
+
+  const handleGetStarted = () => {
+    router.push("/signup")
+  }
+
+  const handleLearnMore = () => {
+    document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })
+  }
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
