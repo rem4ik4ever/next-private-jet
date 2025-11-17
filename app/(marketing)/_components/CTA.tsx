@@ -12,10 +12,10 @@ export default function CTA() {
             Join thousands of companies already using our platform to build amazing products.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button size="lg" variant="secondary" className="px-8" onClick={handleStartTrial}>
+            <Button size="lg" variant="secondary" className="px-8">
               Start free trial
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/30 bg-white/10 px-8 text-primary-foreground hover:bg-white/20" onClick={handleScheduleDemo}>
+            <Button size="lg" variant="outline" className="border-primary-foreground/30 bg-white/10 px-8 text-primary-foreground hover:bg-white/20">
               Schedule demo
             </Button>
           </div>

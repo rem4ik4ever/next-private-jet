@@ -16,10 +16,10 @@ export default function Footer() {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold">Company</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">About us</a></li>
+                <li><a href="/about" className="hover:text-foreground">About us</a></li>
                 <li><a href="#" className="hover:text-foreground">Careers</a></li>
                 <li><a href="#" className="hover:text-foreground">Press</a></li>
-                <li><a href="#" className="hover:text-foreground">Contact</a></li>
+                <li><a href="/contact" className="hover:text-foreground">Contact</a></li>
               </ul>
             </div>
             <div className="space-y-4">
@@ -34,8 +34,8 @@ export default function Footer() {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold">Legal</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">Privacy policy</a></li>
-                <li><a href="#" className="hover:text-foreground">Terms of service</a></li>
+                <li><a href="/privacy" className="hover:text-foreground">Privacy policy</a></li>
+                <li><a href="/terms" className="hover:text-foreground">Terms of service</a></li>
                 <li><a href="#" className="hover:text-foreground">Cookie policy</a></li>
                 <li><a href="#" className="hover:text-foreground">Compliance</a></li>
               </ul>
